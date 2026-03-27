@@ -3,101 +3,434 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Portfolio</title>
+  <title>FirstName LastName - Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-  <header class="hero text-center text-white">
+  <!-- Navigation Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">FirstName</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero text-center text-white">
     <div class="overlay"></div>
     <div class="container hero-content">
-      <h1>FirstName LastName</h1>
-      <p>Full-stack developer • UI/UX fan • building awesome web products</p>
-      <a class="btn btn-light btn-lg" href="#projects">See Projects</a>
+      <img src="https://via.placeholder.com/150" alt="Profile" class="hero-avatar rounded-circle mb-4" />
+      <h1 class="display-4 fw-bold">FirstName LastName</h1>
+      <p class="lead mb-4">Full-Stack Developer • UI/UX Enthusiast • Building Digital Solutions</p>
+      <div class="hero-buttons">
+        <a class="btn btn-light btn-lg me-2" href="#projects">View My Work</a>
+        <a class="btn btn-outline-light btn-lg" href="#contact">Get In Touch</a>
+      </div>
     </div>
   </header>
 
-  <main class="container my-5">
-    <section id="about" class="mb-5">
-      <div class="row align-items-center">
-        <div class="col-md-4 text-center mb-4 mb-md-0">
-          <img src="https://via.placeholder.com/220" alt="Profile" class="rounded-circle profile-img" />
-        </div>
-        <div class="col-md-8">
-          <h2>About Me</h2>
-          <p>I'm a dedicated developer who specializes in building modern, responsive websites and web applications with JavaScript, HTML, CSS, and modern frameworks. I love turning concepts into clean, accessible user experiences and am always learning new tools in the ecosystem.</p>
-          <ul>
-            <li>JavaScript, TypeScript, React, Vue</li>
-            <li>Node.js, Express, REST APIs, Serverless</li>
-            <li>CSS animations, responsive design, accessibility</li>
-          </ul>
+  <main>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <img src="https://via.placeholder.com/250" alt="Profile" class="rounded-3 profile-img shadow" />
+          </div>
+          <div class="col-md-8">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm a passionate full-stack developer with 5+ years of experience building scalable web applications. I specialize in crafting intuitive user experiences and robust backend systems that solve real-world problems.</p>
+            <p>My journey in tech has taken me from frontend design to cloud architecture, and I'm constantly exploring new technologies to expand my skill set. When I'm not coding, you can find me contributing to open-source projects or writing technical blogs.</p>
+            <div class="mt-4">
+              <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              <a href="#" class="btn btn-outline-primary"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="mb-5">
-      <h2 class="mb-4">Projects</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <article class="card project-card h-100">
-            <div class="card-body">
-              <h3 class="card-title">Portfolio Web App</h3>
-              <p class="card-text">A pure client-side portfolio website with project info, skills, and contact section. Built with HTML/CSS/JS and responsive layout.</p>
-              <a href="#contact" class="stretched-link">Learn more</a>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Skills & Expertise</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="skill-card">
+              <h4><i class="fas fa-code"></i> Frontend Development</h4>
+              <p>React, Vue.js, TypeScript, Tailwind CSS, Bootstrap, HTML5, CSS3, JavaScript ES6+</p>
             </div>
-          </article>
+          </div>
+          <div class="col-md-4">
+            <div class="skill-card">
+              <h4><i class="fas fa-server"></i> Backend Development</h4>
+              <p>Node.js, Express, Python, REST APIs, GraphQL, Database Design, SQL, MongoDB</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skill-card">
+              <h4><i class="fas fa-cloud"></i> DevOps & Cloud</h4>
+              <p>AWS, Docker, GitHub Actions, CI/CD, Vercel, Netlify, Linux, Git</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <article class="card project-card h-100">
-            <div class="card-body">
-              <h3 class="card-title">Task Manager</h3>
-              <p class="card-text">A lightweight task manager supporting create, read, update, and delete operations stored in localStorage with a smooth UI.</p>
-              <a href="#contact" class="stretched-link">Learn more</a>
+        <div class="row g-4 mt-4">
+          <div class="col-md-6">
+            <h5>Technical Stack</h5>
+            <div class="skills-list">
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">TypeScript</span>
+              <span class="skill-badge">PostgreSQL</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">AWS</span>
             </div>
-          </article>
-        </div>
-        <div class="col-md-4">
-          <article class="card project-card h-100">
-            <div class="card-body">
-              <h3 class="card-title">Blog Scraper</h3>
-              <p class="card-text">Website that fetches and displays API data with pagination, search, and responsive design. Backend-free deployment ready.</p>
-              <a href="#contact" class="stretched-link">Learn more</a>
+          </div>
+          <div class="col-md-6">
+            <h5>Soft Skills</h5>
+            <div class="skills-list">
+              <span class="skill-badge">Problem Solving</span>
+              <span class="skill-badge">Team Leadership</span>
+              <span class="skill-badge">Communication</span>
+              <span class="skill-badge">Project Management</span>
+              <span class="skill-badge">UI/UX Design</span>
+              <span class="skill-badge">Agile</span>
+              <span class="skill-badge">Mentoring</span>
+              <span class="skill-badge">Adaptability</span>
             </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="mb-5">
-      <h2>Contact</h2>
-      <p>Interested in working together? Send a message below.</p>
-      <div class="card p-4">
-        <form id="contact-form">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required />
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>Senior Full-Stack Developer</h4>
+              <p class="company">TechCorp Solutions • 2022 - Present</p>
+              <p>Led development of customer-facing web applications using React and Node.js. Managed a team of 4 junior developers and improved application performance by 40%.</p>
+              <ul>
+                <li>Architected microservices infrastructure using Docker and Kubernetes</li>
+                <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+                <li>Mentored junior developers and conducted code reviews</li>
+              </ul>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required />
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>Full-Stack Developer</h4>
+              <p class="company">Digital Innovations Inc • 2020 - 2022</p>
+              <p>Developed and maintained 15+ web applications using MERN stack. Collaborated with design team to create responsive and accessible UIs.</p>
+              <ul>
+                <li>Built real-time collaboration features using WebSockets</li>
+                <li>Optimized database queries reducing load time by 35%</li>
+                <li>Implemented automated testing achieving 85% code coverage</li>
+              </ul>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="4" required></textarea>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>Junior Web Developer</h4>
+              <p class="company">StartupHub • 2019 - 2020</p>
+              <p>Developed responsive websites and web applications. Worked on frontend development using React and backend APIs with Express.js.</p>
+              <ul>
+                <li>Created reusable React components and custom hooks</li>
+                <li>Worked with REST APIs and integrated third-party services</li>
+                <li>Collaborated with cross-functional teams in Agile environment</li>
+              </ul>
+            </div>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+        </div>
       </div>
-      <div id="contact-feedback" class="mt-3"></div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Education</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="education-card">
+              <div class="education-header">
+                <h4>Bachelor of Science in Computer Science</h4>
+                <p class="school">State University • Graduated 2019</p>
+              </div>
+              <p>Major in Software Engineering with a focus on web development and database management. GPA: 3.8/4.0</p>
+              <p><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Web Development, Database Systems, Software Engineering, Network Programming</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="education-card">
+              <div class="education-header">
+                <h4>Full-Stack Web Development Bootcamp</h4>
+                <p class="school">Code Academy Online • Completed 2019</p>
+              </div>
+              <p>Intensive 12-week bootcamp covering modern web development practices, from frontend frameworks to backend services.</p>
+              <p><strong>Topics Covered:</strong> React, Node.js, Express, MongoDB, PostgreSQL, Git, Deployment</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-4">
+          <div class="col-12">
+            <h4 class="mb-3">Certifications & Achievements</h4>
+            <ul class="cert-list">
+              <li><strong>AWS Certified Solutions Architect</strong> - 2023</li>
+              <li><strong>Google Cloud Associate Cloud Engineer</strong> - 2022</li>
+              <li><strong>Scrum Master Certification (CSM)</strong> - 2021</li>
+              <li><strong>OpenJS Node.js Application Developer</strong> - 2021</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Featured Projects</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="project-card">
+              <div class="project-image">
+                <img src="https://via.placeholder.com/300x200" alt="E-Commerce Platform" />
+                <div class="project-overlay">
+                  <a href="#" class="btn btn-sm btn-light">View Live</a>
+                  <a href="#" class="btn btn-sm btn-outline-light">GitHub</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>E-Commerce Platform</h3>
+                <p>Full-featured e-commerce solution with payment integration, product management, and order tracking.</p>
+                <p class="tech-stack"><strong>Tech:</strong> React, Node.js, PostgreSQL, Stripe</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="project-card">
+              <div class="project-image">
+                <img src="https://via.placeholder.com/300x200" alt="Task Management App" />
+                <div class="project-overlay">
+                  <a href="#" class="btn btn-sm btn-light">View Live</a>
+                  <a href="#" class="btn btn-sm btn-outline-light">GitHub</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Task Management App</h3>
+                <p>Real-time collaborative task manager with team features, notifications, and analytics dashboard.</p>
+                <p class="tech-stack"><strong>Tech:</strong> Vue.js, Firebase, Tailwind CSS</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="project-card">
+              <div class="project-image">
+                <img src="https://via.placeholder.com/300x200" alt="Analytics Dashboard" />
+                <div class="project-overlay">
+                  <a href="#" class="btn btn-sm btn-light">View Live</a>
+                  <a href="#" class="btn btn-sm btn-outline-light">GitHub</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Analytics Dashboard</h3>
+                <p>Advanced data visualization dashboard with real-time metrics, interactive charts, and custom reports.</p>
+                <p class="tech-stack"><strong>Tech:</strong> React, D3.js, Node.js, MongoDB</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <a href="#" class="btn btn-primary btn-lg">View All Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">What Others Say</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"FirstName delivered an exceptional e-commerce platform that exceeded our expectations. Their attention to detail and technical expertise were outstanding."</p>
+              <div class="testimonial-author">
+                <strong>John Smith</strong>
+                <p>CEO, TechStart Inc</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"Working with FirstName was a pleasure. They brought creative solutions to complex problems and delivered everything on time. Highly recommended!"</p>
+              <div class="testimonial-author">
+                <strong>Sarah Johnson</strong>
+                <p>Product Manager, Digital Ventures</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">"FirstName's technical skills and communication made the project smooth. They mentored our team and left us with maintainable, scalable code."</p>
+              <div class="testimonial-author">
+                <strong>Mike Chen</strong>
+                <p>CTO, Innovation Labs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Get In Touch</h2>
+        <div class="row g-4">
+          <div class="col-md-4 text-center">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h4>Email</h4>
+              <p><a href="mailto:firstname@example.com">firstname@example.com</a></p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h4>Phone</h4>
+              <p><a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h4>Location</h4>
+              <p>San Francisco, CA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-8 mx-auto">
+            <h3 class="text-center mb-4">Send Me a Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control form-control-lg" id="name" placeholder="Your Name" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control form-control-lg" id="email" placeholder="Your Email" required />
+                </div>
+                <div class="col-12">
+                  <input type="text" class="form-control form-control-lg" id="subject" placeholder="Subject" required />
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                </div>
+              </div>
+            </form>
+            <div id="contact-feedback" class="mt-4"></div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="text-center py-4 bg-dark text-white">
+  <!-- Footer -->
+  <footer class="footer py-5 bg-dark text-white">
     <div class="container">
-      <p class="mb-0">© 2026 FirstName LastName — Built with HTML, CSS, and JavaScript</p>
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <h5>FirstName LastName</h5>
+          <p>Full-Stack Developer passionate about building digital solutions that make an impact.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Me</h5>
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-codepen"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary" />
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; 2026 FirstName LastName. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0">Built with <i class="fas fa-heart text-danger"></i> using HTML • CSS • JavaScript</p>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
